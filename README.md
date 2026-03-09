@@ -14,7 +14,7 @@ AudioMatic processes `.wav` and `.mp3` audio files through a 6-step pipeline:
 
 | Step | Script | Description |
 |------|--------|-------------|
-| 1 | `Step1_split_audio_unified.py` | Split long audio files into chunks |
+| 1 | `Step1_split_audio_unified.py` | Split the audio files |
 | 2 | `Step2_wav_to_json_unified.py` | Transcribe with WhisperX + speaker diarization |
 | 3 | `Step03_json_to_txt_mono.py` / `Step3_json_to_txt_stereo.py` | Convert JSON transcripts to speaker-turn TXT |
 | 4 | `Step04_wav_cut_mono.py` / `Step4_wav_cut_stereo.py` | Cut WAV files by speaker turn |
@@ -47,7 +47,9 @@ Then generate a **Read** token at: https://huggingface.co/settings/tokens
 ### Step 0 - AudioMatic environment Setup
 
 [AudioMatic - Linux GPU](https://docs.google.com/document/d/1tse4Jl7Ias5U56HKdHohNlgSM7SwDRdy3j9P-ulFLoQ/edit?tab=t.0)
+
 [AUdioMatic - Windows GPU](https://docs.google.com/document/d/1ntQasMuE1ETGR4-N7YPuh45G0-l2nPo6LSuHM1Mq4eU/edit?tab=t.0)
+
 [AudioMatic - Windows CPU](https://docs.google.com/document/d/1zyDpmOG69ohQ7I82KQoPwso9jH_rIUNfxJ4MoEBqc00/edit?tab=t.0)
 
 ### Step 1 — Clone the repository
@@ -175,7 +177,7 @@ AudioMatic/
 
 If you use AudioMatic in your research, please cite:
 Balducci, B., Pang, B., Hu, L. et al. Leveraging audio data: A guide to understanding customer-firm conversations. Mark Lett 37, 10 (2026). https://doi.org/10.1007/s11002-025-09797-z
-```
+
 
 ---
 
